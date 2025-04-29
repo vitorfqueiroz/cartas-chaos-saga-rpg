@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script defer src="cartas.js"></script>
+    <script defer src="script.js"></script>
+    <title>Chaos Saga</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">Chaos Saga</h1>
+      <ol class="tools">
+        <li>Meu Deck</li>
+        <li>Configurações</li>
+      </ol>
+    </nav>
+
+  <div class="container">
+    <h1 class="quantify">Temos 4/75 cartas!</h1>
+    <input type="text" id="searchInput" placeholder="Pesquise pela carta...">
+  </div> 
+
+    <div id="cartasContainer"></div>
+
+    <!-- Modal para zoom -->
+    <div id="modal" class="modal hidden">
+      <span id="closeModal">&times;</span>
+      <img id="modalImage" src="" alt="Carta Ampliada">
+      <p id="modalTitle"></p>
+    </div>
+  </body>
+</html>
